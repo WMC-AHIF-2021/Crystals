@@ -27,11 +27,9 @@ We use **CSS, HTML** and **Java Script**
 
 <h2> Project Members </h2>
 
-* Cilia Pöllhuber (leader)
- 
+* Cilia Pöllhuber (leader): see Word-File
 
-
-* Deborah Benza
+* Deborah Benza: see Word-File
 
 
 
