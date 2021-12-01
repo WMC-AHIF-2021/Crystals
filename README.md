@@ -9,9 +9,11 @@ Static Part
 
 Dynamic Part
 
-* There will be a forest floor where the crystals lay. You can click on one crystal and then there will fly a fairy to that crystal. The fairy will accompany through the website. 
+* There will be a forest floor where the crystals lay. You can click on one crystal and then there will fly a fairy to that crystal. The fairy will accompany through the website. Then you will see the description of the crystal you clicked on and other things. There will also be downtrops where you can click on for example "crystals" and then the crystals will be listed. We'll put in a About Us button.
 
+<h2>Milestones</h2>
 
+* search the informatins to the crystals (04.11.)
 
 <h2> Environmental Analysis, Risks and Showstoppers </h2>
 
@@ -26,6 +28,8 @@ We use **CSS, HTML** and **Java Script**
 <h2> Project Members </h2>
 
 * Cilia Pöllhuber (leader)
+ 
+
 
 * Deborah Benza
 
