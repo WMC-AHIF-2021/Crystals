@@ -1,5 +1,5 @@
 
-<img href="crystal.png" alt="Crystals">
+![Crystal](crystal.png)
 <h1> Crystals </h1>
 
 <h2>Description</h2>
