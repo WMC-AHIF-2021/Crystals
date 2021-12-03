@@ -1,3 +1,5 @@
+
+<img href="crystal.png" alt="Crystals">
 <h1> Crystals </h1>
 
 <h2>Description</h2>
