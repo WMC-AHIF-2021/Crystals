@@ -1,17 +1,23 @@
 body {
     font-family: "Lucida Console", "Courier New", monospace;
     font-size: medium;
-    background-color: rgba(8, 45, 88, 0.795);
+    background-color: #515e6bcb;
     background-size: auto;
 }
 
 .image {
-    width: 150px;
-    height: 150px;
+    width: 9em;
+    height: 9em;
+}
+
+.outfitImg
+{
+    width: 15em;
+    height: 26em;
 }
 
 div {
-    background-color: rgba(120, 241, 160, 0.705);
+    background-color: rgba(146, 92, 92, 0.705);
     width: 1024px;
     padding: 60px;
     margin: 120px;
@@ -19,7 +25,7 @@ div {
   }
 
 p {
-    color: rgb(222, 255, 189);
+    color: rgba(14, 1, 71, 0.918);
 }
 
 h1, h2, h3{
@@ -27,8 +33,11 @@ h1, h2, h3{
 }
 
 a {
-    color:rgba(81, 247, 117, 0.767);
+    color:rgb(255, 144, 52);
+}
+a:link, a:visited {
+    text-decoration: none;
 }
 a:visited{
-    color:rgba(14, 10, 10, 0.726);
+    color:rgb(253, 243, 105);
 }
