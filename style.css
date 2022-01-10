@@ -1,0 +1,18 @@
+div {
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: medium;
+    color: rgb(167, 36, 36);
+}
+
+body{
+    background-color: black;
+}
+
+.navbar{
+    color: blueviolet;
+}
+
+.about-item
+{
+    
+}
