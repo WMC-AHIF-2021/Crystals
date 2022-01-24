@@ -4,14 +4,21 @@ div {
     color: rgb(255, 255, 255);
 }
 
-body{
-    background-color: black;
-}
-
 .navbar{
     color: blueviolet;
 }
 
 .nav-link:active, .nav-link:hover {
-    color: rgb(9, 1, 56) !important;
+    color: rgb(82, 1, 58) !important;
   }
+
+  
+
+  .slide-image {
+    width: 100vw;
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+  }
+
+
