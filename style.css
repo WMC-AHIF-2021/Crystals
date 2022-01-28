@@ -1,9 +1,15 @@
-div {
-    font-family: "Lucida Console", "Courier New", monospace;
-    font-size: medium;
+
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600&display=swap');
+.navbar {
+  font-family: "Lucida Console", "Courier New", monospace;
+    font: bold;
+    font-size: large;
     color: rgb(255, 255, 255);
 }
-
+div{
+  font-family: "Lucida Console", "Courier New", monospace;
+  
+}
 .navbar{
     color: blueviolet;
 }
@@ -12,7 +18,40 @@ div {
     color: rgb(82, 1, 58) !important;
   }
 
-  
+  .grid-container 
+  {
+       display: grid;
+       grid-template-columns: auto auto auto;
+       grid-template-rows: auto auto auto;
+       
+      
+       padding: 10px;
+       
+  }
+
+  .item1{
+    grid-column-start: 1;
+     grid-column-end: 3;
+     grid-row-start: 2;
+     grid-row-end: 2;
+     padding-right: 600px;
+  }
+
+  .flex-container
+{
+     display: flex;
+     justify-content: center;
+     flex-direction: row;
+     float: right ;
+}
+
+.flex-container > div
+{     
+     background-color: rgb(255, 255, 255);
+     padding-right: 50px;
+     padding-left: 50px;   
+     background-color: grey;
+}
 
   .slide-image {
     width: 100vw;
