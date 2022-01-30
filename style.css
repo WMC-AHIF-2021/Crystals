@@ -67,7 +67,7 @@ div{
     background-size: cover;
   }
 
-  .dropdown-submenu {
+ .dropdown-submenu {
     position: relative;
   }
 
@@ -75,7 +75,7 @@ div{
     top: 1;
     left: 100%;
     margin-top: -1px;
-  }
+ }
 
 
 
