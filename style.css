@@ -11,12 +11,29 @@ div{
   font-family: "Lucida Console", "Courier New", monospace;
   background-color: #A8B1D8;
 }
+.carousel-inner{
+  background-color: khaki;
+}
+.backgroundpic{
+  background-color: khaki;
+}
+
+.item66{
+  grid-column-start: 1;
+    grid-column-end:4;
+    background-color: transparent;
+}
 
 .navbar{
   border-bottom: 1px solid #ffffff;
 }
 .nav-link:active, .nav-link:hover {
     color: rgb(82, 1, 58) !important;
+  }
+  .nav-link:active{
+    color:rgb(71, 82, 146);
+    font: bold;
+    
   }
 
   .grid-container 
@@ -65,6 +82,17 @@ div{
     border-radius: 50%;
     background-position: center;
     background-size: cover;
+    background-color: #A8B1D8;
+  }
+
+  .about-us-image-debroo {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    background-color: #A8B1D8;
+    
   }
 
  .dropdown-submenu {
@@ -74,7 +102,7 @@ div{
   .dropdown-submenu .dropdown-menu {
     top: 1;
     left: 100%;
-    margin-top: -1px;
+    margin-top: -50px;
  }
 
 

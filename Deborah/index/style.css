@@ -1,0 +1,112 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600&display=swap');
+.navbar {
+  font-family: "Lucida Console", "Courier New", monospace;
+    font: bold;
+    font-size: large;
+    color: rgb(255, 255, 255);
+   
+}
+div{
+  font-family: "Lucida Console", "Courier New", monospace;
+  background-color: #A8B1D8;
+}
+
+.navbar{
+  border-bottom: 1px solid #ffffff;
+}
+.nav-link:active, .nav-link:hover {
+    color: rgb(82, 1, 58) !important;
+  }
+
+  .grid-container 
+  {
+       display: grid;
+       grid-template-columns: auto auto auto;
+       grid-template-rows: auto auto auto;
+       padding: 10px;
+       size: 100px;
+  }
+
+  .item1{
+    grid-column-start: 1;
+     grid-column-end: 3;
+     grid-row-start: 2;
+     grid-row-end: 2;
+     padding-right: 600px;
+  }
+
+  .flex-container
+{
+     display: flex;
+     justify-content: center;
+     flex-direction: row;
+     float: right ;
+}
+
+.flex-container > div
+{     
+     background-color: rgb(255, 255, 255);
+     padding-right: 50px;
+     padding-left: 50px;   
+     background-color: grey;
+}
+
+  .slide-image {
+    width: 100vw;
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .about-us-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    background-color: #c2b2e6cb;
+  }
+
+  .about-us-image-debroo {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    background-color: #c2b2e6cb;
+    
+  }
+
+ .dropdown-submenu {
+    position: relative;
+  }
+
+  .dropdown-submenu .dropdown-menu {
+    top: 1;
+    left: 100%;
+    margin-top: -50px;
+ }
+
+
+
+
+  .dropdown-menu
+  {
+    font-family: "Lucida Console", "Courier New", monospace;
+    font: bold;
+    font-size: large;
+    color: rgb(150, 31, 31);
+  }
+  .dropdown-submenu
+  {
+    font-family: "Lucida Console", "Courier New", monospace;
+    font: bold;
+    font-size: large;
+    color: rgb(51, 9, 9);
+  }
+  .dropdown{
+    font-family: "Lucida Console", "Courier New", monospace;
+    font: bold;
+  }
+
