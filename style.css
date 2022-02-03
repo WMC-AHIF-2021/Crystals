@@ -95,35 +95,38 @@ div{
     
   }
 
- .dropdown-submenu {
+  .dropdown-submenu { /*dropdown to dropdown Funktion*/
     position: relative;
+    cursor: pointer;
   }
 
-  .dropdown-submenu .dropdown-menu {
+  .dropdown-submenu .dropdown-menu { /*dropdown to dropdown einstellungen*/
     top: 1;
     left: 100%;
-    margin-top: -50px;
- }
-
-
-
-
-  .dropdown-menu
-  {
-    font-family: "Lucida Console", "Courier New", monospace;
-    font: bold;
-    font-size: large;
-    color: rgb(150, 31, 31);
+    margin-top: -20px;
   }
-  .dropdown-submenu
-  {
-    font-family: "Lucida Console", "Courier New", monospace;
-    font: bold;
-    font-size: large;
-    color: rgb(51, 9, 9);
+
+  .dropdown-content {
+    display: inline;
+   /* display: none;*/
+    position: absolute;
+    background-color: #ffffff; /*Hintergrund des Dropdowns*/
+    min-width: 160px; /*Breite der Dropdown Box*/
+    /*box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);*/
+     z-index: 1;
   }
-  .dropdown{
-    font-family: "Lucida Console", "Courier New", monospace;
+  
+  .dropdown-content a { /*Farbe der Buchstaben im Dropdown*/
+    color: rgb(0, 0, 0);
+    padding: 3px 5px;
+    text-decoration: none;
     font: bold;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #A8B1D8} /*Farbe des Dropdowns*/
+  
+  .dropdown:hover .dropdown-content { /*dropdown Funktion*/
+    display: block;
   }
 
