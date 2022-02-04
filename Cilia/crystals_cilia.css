@@ -1,9 +1,18 @@
 body {
     font-family: "Lucida Console", "Courier New", monospace;
-    font-size: medium;
+    
     background-color: #A8B1D8;
     background-size: auto;
     color: #ffffff;
+}
+
+
+.navbar {
+  font-family: "Lucida Console", "Courier New", monospace;
+    font: bold;
+    font-size: large;
+    color: rgb(255, 255, 255);
+   
 }
 
 .nav-link:active, .nav-link:hover {

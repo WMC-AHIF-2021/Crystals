@@ -7,9 +7,12 @@
     color: rgb(255, 255, 255);
    
 }
+
+
 div{
   font-family: "Lucida Console", "Courier New", monospace;
   background-color: #A8B1D8;
+  color:rgb(255, 255, 255);
 }
 .carousel-inner{
   background-color: khaki;
