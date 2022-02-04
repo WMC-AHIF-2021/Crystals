@@ -117,14 +117,14 @@ div{
   }
   
   .dropdown-content a { /*Farbe der Buchstaben im Dropdown*/
-    color: rgb(0, 0, 0);
+    color: #A8B1D8;
     padding: 3px 5px;
     text-decoration: none;
     font: bold;
     display: block;
   }
   
-  .dropdown-content a:hover {background-color: #A8B1D8} /*Farbe des Dropdowns*/
+  .dropdown-content a:hover {background-color: #dbe0f5} /*Farbe des Dropdowns*/
   
   .dropdown:hover .dropdown-content { /*dropdown Funktion*/
     display: block;
