@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600&display=swap');
 .navbar {
   font-family: "Lucida Console", "Courier New", monospace;
@@ -132,4 +131,3 @@ div{
   .dropdown:hover .dropdown-content { /*dropdown Funktion*/
     display: block;
   }
-
