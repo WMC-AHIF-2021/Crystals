@@ -21,6 +21,8 @@ Dynamic Part
 
 * search the informatins to the crystals (04.11.)
 
+* do the dynamic part (2. semester)
+
 <h2> Environmental Analysis, Risks and Showstoppers </h2>
 
 
