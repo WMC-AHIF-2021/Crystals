@@ -1,5 +1,5 @@
 
-![Crystal](crystal.png)
+![Crystal](pic.jfif)
 <h1> Crystals </h1>
 
 Here you can find our WEBSITE: https://wmc-ahif-2021.github.io/Crystals/
