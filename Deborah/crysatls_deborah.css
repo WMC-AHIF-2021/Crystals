@@ -77,7 +77,9 @@ body {
   }
 
 .div-s {
-    background-color: #c8d0f3;
+  background-color: #818BB0;
+    /*background-color: #A09CC8;
+    background-color: #c8d0f3;*/
     padding: 11px;
   }
 
@@ -88,12 +90,6 @@ h1, h2, h3{
     color: #ffffff;
     text-align: center;
 }
-.div-s {
-    background-color: #c8d0f3;
-    padding: 11px;
-    
-    
-  }
 
 a {
     color:rgb(163, 73, 0);
