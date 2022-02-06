@@ -35,8 +35,8 @@ body {
 }
 
 .image {
-    width: 9em;
-    height: 9em;
+    width: 20em;
+    height: 20em;
 }
 
 .grid-container{
@@ -76,21 +76,11 @@ body {
       border-bottom: 1px solid #A8B1D8;
   }
 
-.outfitImg
-{
-    width: 18em;
-    height: 18em;
-    padding-left: 30px;
-}
-
 .div-s {
-    background-color: green;
+    background-color: #c8d0f3;
     padding: 11px;
   }
 
-p {  
-    color: #ffffff;
-}
 
 h1, h2, h3{
     font: bold;
@@ -98,6 +88,12 @@ h1, h2, h3{
     color: #ffffff;
     text-align: center;
 }
+.div-s {
+    background-color: #c8d0f3;
+    padding: 11px;
+    
+    
+  }
 
 a {
     color:rgb(163, 73, 0);
