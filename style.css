@@ -1,16 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600&display=swap');
 .navbar {
-  font-family: "Lucida Console", "Courier New", monospace;
+ /* font-family: "Lucida Console", "Courier New", monospace;*/
+ font-family: 'Hind Siliguri', sans-serif;
+ font-family: 'IBM Plex Sans Thai Looped', sans-serif;
     font: bold;
     font-size: large;
     color: rgb(255, 255, 255);
+    font-family: 'Hind Siliguri', sans-serif;
+font-family: 'IBM Plex Sans Thai Looped', sans-serif;
    
 }
-
+/*.container-fluid{
+  font-family:  'Hind Siliguri', sans-serif;
+  font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+  font-family: 'Indie Flower', cursive;
+}*/
 
 div{
-  font-family: "Lucida Console", "Courier New", monospace;
+  font-family: 'Hind Siliguri', sans-serif;
+font-family: 'IBM Plex Sans Thai Looped', sans-serif;
   background-color: #A8B1D8;
+  font-size: 1em;
   color:rgb(255, 255, 255);
 }
 .carousel-inner{
