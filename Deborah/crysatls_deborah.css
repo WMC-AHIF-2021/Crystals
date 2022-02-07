@@ -1,5 +1,7 @@
 body {
-    font-family: "Lucida Console", "Courier New", monospace;
+  font-family: 'Hind Siliguri', sans-serif;
+ font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    /*font-family: "Lucida Console", "Courier New", monospace;*/
     
     background-color: #000000;
     background-size: auto;
@@ -7,6 +9,7 @@ body {
 }
 
 .navbar {
+
   font-family: "Lucida Console", "Courier New", monospace;
     font: bold;
     font-size: large;
