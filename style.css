@@ -120,7 +120,7 @@ font-family: 'IBM Plex Sans Thai Looped', sans-serif;
 
   .dropdown-content {
     display: inline;
-   /* display: none;*/
+    /*display: none;*/
     position: absolute;
     background-color: #ffffff; /*Hintergrund des Dropdowns*/
     min-width: 160px; /*Breite der Dropdown Box*/
