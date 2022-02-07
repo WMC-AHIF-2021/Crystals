@@ -35,13 +35,9 @@ We use **CSS, HTML** and **Java Script**
 
 <h2> Project Members </h2>
 
-* Cilia Pöllhuber (leader): 
-    * 31 Crystals (see Wordfile)
-    * index-page
+* Cilia Pöllhuber (leader): see Word-File
 
 * Deborah Benza: see Word-File
-    * 30 Crystals (see Worldfile)
-    * index-page
 
 
 
