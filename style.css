@@ -141,3 +141,24 @@ font-family: 'IBM Plex Sans Thai Looped', sans-serif;
   .dropdown:hover .dropdown-content { /*dropdown Funktion*/
     display: block;
   }
+
+ /*Symbol der ladet*/
+  #LoadingSymbolS {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #A8B1D8;
+    z-index: 1;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
+#loadingSysmbol {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 50%;
+    top: 50%;
+}
