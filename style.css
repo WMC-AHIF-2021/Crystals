@@ -3,7 +3,7 @@
  /* font-family: "Lucida Console", "Courier New", monospace;*/
  font-family: 'Hind Siliguri', sans-serif;
  font-family: 'IBM Plex Sans Thai Looped', sans-serif;
-    font: bold;
+
     font-size: large;
     color: rgb(255, 255, 255);
     font-family: 'Hind Siliguri', sans-serif;
@@ -44,7 +44,7 @@ font-family: 'IBM Plex Sans Thai Looped', sans-serif;
   }
   .nav-link:active{
     color:rgb(71, 82, 146);
-    font: bold;
+    font-weight: bold;
     
   }
 
@@ -113,7 +113,7 @@ font-family: 'IBM Plex Sans Thai Looped', sans-serif;
   }
 
   .dropdown-submenu .dropdown-menu { /*dropdown to dropdown einstellungen*/
-    top: 1;
+    top: 1%;
     left: 100%;
     margin-top: -20px;
   }
@@ -132,7 +132,7 @@ font-family: 'IBM Plex Sans Thai Looped', sans-serif;
     color: #A8B1D8;
     padding: 3px 5px;
     text-decoration: none;
-    font: bold;
+    font-weight: bold;
     display: block;
   }
   
