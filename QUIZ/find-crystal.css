@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600&display=swap');
+.navbar {
+    background-color: #A8B1D8;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    font-size: large;
+    color: rgb(255, 255, 255);
+    font-family: 'Hind Siliguri', sans-serif;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+}
+
+/*body
+{
+    background-color: #A8B1D8;
+}*/
+
+/*.container{
+    grid-column-start: 1;
+    grid-column-end:4;
+    background-color: transparent;
+}*/
+
+div{
+    font-family: 'Hind Siliguri', sans-serif;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    background-color: #A8B1D8;
+    font-size: 1em;
+    color:rgb(255, 255, 255);
+}
+.hud-prefix
+{
+    text-align: center;
+    font-size: 2em;
+}
+
+.navbar{
+    /*Linie unterm navbar*/
+    border-bottom: 1px solid #ffffff;
+}
+
+* {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+
+
+.prompt {
+    display: block;
+    font-size: 20px;
+}
+
+.btn {
+    margin: 0 20px 0 20px;
+}
+
+.btn-strongly-agree {
+    color: #89d298;
+    font-weight: bold;
+}
+
+.btn-strongly-agree.active,
+.btn-strongly-agree:active,
+.btn-strongly-agree:focus,
+.btn-strongly-agree:active:focus,
+.btn-strongly-agree.active:focus,
+.btn-strongly-agree:hover
+{
+    background-color: #89d298;
+}
+
+.btn-agree {
+    color: #89d298;
+}
+
+.btn-agree.active,
+.btn-agree:active,
+.btn-agree:focus,
+.btn-agree:active:focus,
+.btn-agree.active:focus,
+.btn-agree:hover {
+    background-color: rgba(137, 210, 152, 0.5);
+}
+
+.btn-disagree {
+    color: #e28181;
+}
+
+.btn-disagree.active,
+.btn-disagree:active,
+.btn-disagree:focus,
+.btn-disagree:active:focus,
+.btn-disagree.active:focus,
+.btn-disagree:hover {
+    background-color: rgba(226, 129, 129, 0.5);
+}
+
+.btn-strongly-disagree {
+    color: #e28181;
+    font-weight: bold;
+}
+
+.btn-strongly-disagree.active,
+.btn-strongly-disagree:active,
+.btn-strongly-disagree:focus,
+.btn-strongly-disagree:active:focus,
+.btn-strongly-disagree.active:focus,
+.btn-strongly-disagree:hover {
+    background-color: #e28181;
+}
+
+.bottom {
+    margin-bottom: 100px;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+/*results*/
+.results {
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+/*Grid with Cards*/
+.grid-container-cards
+{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    grid-gap:10px;
+    padding: 10px;
+}
+
+.colorButton{
+    background-color: #7c9fc5;
+    border-color: #7c9fc5;
+}
+
+.card-one{
+    width: 22em;
+    margin-left: 5em;
+}
+.cards{
+    width: 22em;
+}
+
+.color1{
+    border-color: #7c9fc5;
+    border-left-width: 7px;
+    border-top-width: 7px;
+    border-right-width: 7px;
+    border-bottom-width: 7px;
+}
+
+.color2{
+    border-color: #7c9fc5;
+    border-left-width: 7px;
+    border-top-width: 7px;
+    border-right-width: 7px;
+    border-bottom-width: 7px;
+}
+
+/*DROPDOWN*/
+.dropdown-submenu { /*dropdown to dropdown Funktion*/
+    position: relative;
+    cursor: pointer;
+}
+
+.dropdown-submenu .dropdown-menu { /*dropdown to dropdown einstellungen*/
+    top: 1%;
+    left: 100%;
+    margin-top: -20px;
+}
+
+.dropdown-content {
+    display: inline;
+    /* display: none;*/
+    position: absolute;
+    background-color: #ffffff; /*Hintergrund des Dropdowns*/
+    min-width: 160px; /*Breite der Dropdown Box*/
+    /*box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);*/
+    z-index: 1;
+}
+
+.dropdown-content a { /*Farbe der Buchstaben im Dropdown*/
+    color: #A8B1D8;
+    padding: 3px 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #dbe0f5} /*Farbe des Dropdowns*/
+
+.dropdown:hover .dropdown-content { /*dropdown Funktion*/
+    display: block;
+}

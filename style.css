@@ -30,12 +30,6 @@ font-family: 'IBM Plex Sans Thai Looped', sans-serif;
   background-color: khaki;
 }
 
-.item66{
-  grid-column-start: 1;
-    grid-column-end:4;
-    background-color: transparent;
-}
-
 .navbar{
   border-bottom: 1px solid #ffffff;
 }
@@ -47,7 +41,6 @@ font-family: 'IBM Plex Sans Thai Looped', sans-serif;
     font-weight: bold;
     
   }
-
   .grid-container 
   {
        display: grid;
