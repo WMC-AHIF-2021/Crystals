@@ -110,6 +110,11 @@ font-family: 'IBM Plex Sans Thai Looped', sans-serif;
     left: 100%;
     margin-top: -20px;
   }
+  .dropdown-menu
+  {
+      min-width: 10rem;
+      border: 1px solid rgba(0,0,0,.15);
+  }
 
   .dropdown-content {
     display: inline;
