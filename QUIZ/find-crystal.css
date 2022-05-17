@@ -171,10 +171,14 @@ div{
     cursor: pointer;
 }
 
-.dropdown-submenu .dropdown-menu { /*dropdown to dropdown einstellungen*/
+.dropdown-submenu .dropdown-menu{ /*dropdown to dropdown einstellungen*/
     top: 1%;
     left: 100%;
     margin-top: -20px;
+}
+.dropdown-menu
+{
+    padding: 0rem;
 }
 
 .dropdown-content {

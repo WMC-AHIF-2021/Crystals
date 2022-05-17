@@ -14,11 +14,20 @@
     <title>Crystals - by Cilia & Deborah</title>
   </head>
 
+  <!--
+  TODO index.html:
+  - About Us rechte Seite
+  - About Us unten besser designen(schaut ein wenig fad aus)
+  - Explore(dynamic part)
+  - dropdown
+  - linie unterm crystal wegmachen
+  -->
+
   <body class="bg-light text-dark">
-    <!--LoadingSymbol-->
     <div id="LoadingSymbol">
 			<img id="loadingSysmbol" src="images/gems.png" alt="LoadingSymbol">
     </div>
+
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg sticky-top" style=" background-color: #A8B1D8;" >
       <nav class="navbar">
@@ -27,7 +36,8 @@
               <img style="color: #ffffff; ;" src="images/crystall.png" alt="crystal" width="35" height="30" style="margin-left: 10px;" >
             </a>
           </div>
-        </nav>
+      </nav>
+
       <div class="container-fluid">
         <a class="navbar-brand fw-bold" href="#" style="color: #ffffff; font-size: 1.3em;">C&D - Crystals & Outfits</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span> </button>
@@ -51,8 +61,8 @@
                       Our Crystals
                     </a>   
                      <ul class="dropdown-menu"  aria-labelledby="navbarLightDropdownMenuLink">
-                      <div class="dropdown-content"> 
-                      <li class="dropdown-submenu">
+                         <div class="dropdown-content">
+                             <li class="dropdown-submenu">
                       <a class="test" href="#">A<span class="navbar-toggler-icon"></span></a>  
                         <ul class="dropdown-menu">
                           <li><a class="dropdown-item" href="Deborah/Aegirine.html">Aegirine</a></li>
@@ -222,40 +232,36 @@
                           <li><a class="dropdown-item" href="Cilia/tigerseye.html">Tigers Eye Golden</a></li>
                         </ul>
                       </li>
-                    </ul>
                   </li>
-                </ul>            
+                         </div>
+                </ul>
+                  </li>
+                </ul>
               </div>
-                </div>
-
             </div>
-            </div>
-          </div>
-        </div>
 
-    <script>
-      $(document).ready(function(){
-        $('.dropdown-submenu a.test').on("click", function(e){
-          $(this).next('ul').toggle();
-          e.stopPropagation();
-          e.preventDefault();
-        });
-      });
-
-      document.querySelectorAll('.dropdown-menu').forEach(function(element){
-          element.addEventListener('click', function (e) {
+            <script>
+            $(document).ready(function(){
+            $('.dropdown-submenu a.test').on("click", function(e){
+            $(this).next('ul').toggle();
             e.stopPropagation();
-          });
-        })
-      </script>
-    
+            e.preventDefault();
+            });
+            });
 
-          <ul class="navbar-nav ms-auto">
+            document.querySelectorAll('.dropdown-menu').forEach(function(element){
+            element.addEventListener('click', function (e) {
+            e.stopPropagation();
+            });
+            })
+             </script>
+
+             <ul class="navbar-nav ms-auto">
             <li class="nav-item " >
               <a class="nav-link" style="color: #ffffff;" href="#about">About us</a>
             </li>
+            </ul>
           </ul>
-
         </div>
       </div>
     </nav>
