@@ -195,25 +195,46 @@ $('#submit-btn').click(function () {
         // document.getElementById('intro-bar').style.width = ((total / 60) * 100) + '%';
         // console.log(document.getElementById('intro-bar').style.width);
         // document.getElementById('intro-bar').innerHTML= ((total / 60) * 100) + '%';
-        document.getElementById('results').innerHTML = '<b>You are introverted!</b><br><br>\
-		Introverts are tricky to understand, since it’s so easy for us to assume that introversion is the same as being shy, when, in fact, introverts are simply people who find it tiring to be around other people.\n\
+        document.getElementById('results').innerHTML = '<b>You are a introverted person!</b><br><br>\
+		Introverts are tricky to understand, since it’s so easy to assume that introversion is the same as being shy, when, in fact, introverts are simply people who find it tiring to be around other people.\n\
 <br><br>\
-I love this explanation of an introvert’s need to be alone:\n\
-<br><br>\
-For introverts, to be alone with our thoughts is as restorative as sleeping, as nourishing as eating.\n\n\
+For introverts, to be alone with their thoughts is as restorative as sleeping, as nourishing as eating.\n\n\
 <br><br>\
 Introverted people are known for thinking things through before they speak, enjoying small, close groups of friends and one-on-one time, needing time alone to recharge, and being upset by unexpected changes or last-minute surprises. Introverts are not necessarily shy and may not even avoid social situations, but they will definitely need some time alone or just with close friends or family after spending time in a big crowd.\
+<br><br>\
+\The best crystals you can wear as a jewerly for introvert people are:\
+<br><br>\
+ \- Black Torumaline -> It protecs your Energy.\
+ <br>\
+ \- Red Jasper -> It encoures you to take actions and experiences you wouldnt typically make\
+ <br>\
+ \- Citrine -> It gives you self-coinfidence\
+ <br>\
+ \- Kunzite -> It opens your heart up to the world\
+ <br>\
+ \- Blue Lace Agate -> It helps you to show your authentic self with more confidence\
+ <br>\
+ \- Lepidolite -> It offers you support to work through anxiety\
 		';
     } else if(total > 0) {
-        document.getElementById('results').innerHTML = '<b>You are extroverted!</b><br><br>\
+        document.getElementById('results').innerHTML = '<b>You are a extroverted person!</b><br><br>\
 		On the opposite side of the coin, people who are extroverted are energized by people. They usually enjoy spending time with others, as this is how they recharge from time spent alone focusing or working hard.\
 <br><br>\
-I like how this extrovert explains the way he/she gains energy from being around other people:\
+When extroverted people are among other people, they make eye contact, smile, maybe chat if there’s an opportunity. As an extrovert, that’s a small ‘ping’ of energy, a little positive moment in the day.\
 <br><br>\
-When I am among people, I make eye contact, smile, maybe chat if there’s an opportunity (like being stuck in a long grocery store line). As an extrovert, that’s a small ‘ping’ of energy, a little positive moment in the day.';
+\The best crystals you can wear as a jewerly if you are extrovert are:\
+<br><br>\
+\- Hematite -> It grounds your energy\
+<br>\
+\- Sodalite - It nurtruring your communication and make you think before speaking.\
+<br>\
+\- Kunzite -> It balances your mental and emotional aspects\
+<br>\
+\- Amethyst -> It helps your turning your facilitates inward and developing and trusting intuition rather than physical facts\
+';
     } else {
         document.getElementById('results').innerHTML = '<b>You are ambiverted!</b><br><br>\
-		Since introverts and extroverts are the extremes of the scale, the rest of us fall somewhere in the middle. Many of us lean one way or the other, but there are some who are quite balanced between the two tendencies. These people are called ambiverts.\
+		Since introverts and extroverts are the extremes of the scale, the rest of people fall somewhere in the middle. Many of us lean one way or the other, but there are some who are quite balanced between the two tendencies. These people are called ambiverts.\
 <br><br>\
 So let’s look at how an ambivert compares.\
 <br><br>\

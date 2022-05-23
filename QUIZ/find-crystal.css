@@ -241,17 +241,47 @@ div{
 
 .containerQUIZ
 {
-    margin: 1px;
     color: white;
+    align-items: center;
+
 }
 
-.container.text-center
-{
-    margin-right: 1px;
-    margin-left: 1px;
+.container.text-center {
+    margin-right: 10px;
+    margin-left: 100px;
+    margin-top: 0px;
 }
 
 .container.text-center.bottom
 {
     background-color: white;
+}
+
+.results
+{
+    background-color: #A8B1D8;
+
+}
+
+.container.text-center.results.show
+{
+    background-color: #A8B1D8;
+    width: 100%;
+    height: 100%;
+
+}
+
+/*.h2
+{
+    line-height: 1.2;
+    align-content: center;
+    margin-left: 50px;
+}*/
+
+.list-group
+{
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
