@@ -63,8 +63,6 @@ var prompts = [
 
 ]
 
-// This array stores all of the possible values and the weight associated with the value.
-// The stronger agreeance/disagreeance, the higher the weight on the user's answer to the prompt.
 var prompt_values = [
     {
         value: 'Strongly Agree',
@@ -93,7 +91,6 @@ var prompt_values = [
     }
 ]
 
-// For each prompt, create a list item to be inserted in the list group
 function createPromptItems() {
 
     for (var i = 0; i < prompts.length; i++) {
@@ -109,21 +106,6 @@ function createPromptItems() {
     }
 }
 
-// For each possible value, create a button for each to be inserted into each li of the quiz
-// function createValueButtons() {
-
-// 	for (var li_index = 0; li_index < prompts.length; li_index++) {
-// 		for (var i = 0; i < prompt_values.length; i++) {
-// 			var val_button = document.createElement('button');
-// 			var val_text = document.createTextNode(prompt_values[i].value);
-
-// 			val_button.setAttribute('class', 'value-btn btn ' + prompt_values[i].class);
-// 			val_button.appendChild(val_text);
-
-// 			document.getElementsByClassName('prompt')[li_index].appendChild(val_button);
-// 		}
-// 	}
-// }
 function createValueButtons() {
     for (var li_index = 0; li_index < prompts.length; li_index++) {
         var group = document.createElement('div');
@@ -149,11 +131,10 @@ function createValueButtons() {
 createPromptItems();
 createValueButtons();
 
-// Keep a running total of the values they have selected. If the total is negative, the user is introverted. If positive, user is extroverted.
-// Calculation will sum all of the answers to the prompts using weight of the value * the weight of the prompt.
+//Total of selected values = if total is negative --> introverted, total is positive = extroverted
+//sum of all the answers (wright of the value * weight of prompts)
 var total = 0;
 
-// Get the weight associated to group number
 function findPromptWeight(prompts, group) {
     var weight = 0;
 
@@ -162,11 +143,9 @@ function findPromptWeight(prompts, group) {
             weight = prompts[i].weight;
         }
     }
-
     return weight;
 }
 
-// Get the weight associated to the value
 function findValueWeight(values, value) {
     var weight = 0;
 
@@ -179,7 +158,7 @@ function findValueWeight(values, value) {
     return weight;
 }
 
-// When user clicks a value to agree/disagree with the prompt, display to the user what they selected
+//shows what you clicked
 $('.value-btn').mousedown(function () {
     var classList = $(this).attr('class');
     // console.log(classList);
@@ -188,9 +167,7 @@ $('.value-btn').mousedown(function () {
     var this_group = classArr[0];
     // console.log(this_group);
 
-    // If button is already selected, de-select it when clicked and subtract any previously added values to the total
-    // Otherwise, de-select any selected buttons in group and select the one just clicked
-    // And subtract deselected weighted value and add the newly selected weighted value to the total
+    //if the button has been selected, de-select it when click, if not de-select any selected buttons and select the one just clicked
     if($(this).hasClass('active')) {
         $(this).removeClass('active');
         total -= (findPromptWeight(prompts, this_group) * findValueWeight(prompt_values, $(this).text()));
@@ -205,15 +182,12 @@ $('.value-btn').mousedown(function () {
         $(this).addClass('active');
         total += (findPromptWeight(prompts, this_group) * findValueWeight(prompt_values, $(this).text()));
     }
-
     console.log(total);
 })
 
 
 
 $('#submit-btn').click(function () {
-    // After clicking submit, add up the totals from answers
-    // For each group, find the value that is active
     $('.results').removeClass('hide');
     $('.results').addClass('show');
 

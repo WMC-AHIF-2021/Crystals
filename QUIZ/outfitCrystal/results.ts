@@ -1,52 +1,30 @@
-var myQuestions = [
-    {
-        question: "Which outfit would you choose?",
-        answers: {
-            a: 'outfit',
-            b: 'outfit',
-            c: 'outfit',
-            d: 'outfit'
-        },
-        correctAnswer: 'outfit'
-        },
-    {
-        question: "Another question",
-        answers: {
-            a: 'a',
-            b: 'b',
-            c: 'c'
-        },
-        correctAnswer: 'c'
-    }
-];
-
 var quizContainer = document.getElementById('quiz');
 var resultsContainer = document.getElementById('results');
 var submitButton = document.getElementById('submit');
 
-generateQuiz(myQuestions, quizContainer, resultsContainer, submitButton);
+//generateQuiz(myQuestions, quizContainer, resultsContainer, submitButton);
 
-function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
+function generateQuiz(questions, quizContainer, resultsContainer, submitButton) {
 
-    function showQuestions(questions, quizContainer){
+    function showQuestions(questions, quizContainer) {
         // store output
         var output = [];
         var answers;
 
         // for questions
-        for(var i=0; i<questions.length; i++){
+        for (var i = 0; i < questions.length; i++) {
 
             // reset list of the answers
             answers = [];
 
             // for available answers
-            for(let letter in questions[i].answers){
+            for (let letter in questions[i].answers) {
 
                 // add an html radio button
                 answers.push(
                     '<img src="home.jpg" alt="Black outfit" style="width: 20em">'
-                    +'<label>'
-                    + '<input type="radio" name="question'+i+'" value="'+letter+'">'
+                    + '<label>'
+                    + '<input type="radio" name="question' + i + '" value="' + letter + '">'
                     + letter + ': '
                     + questions[i].answers[letter]
                     + '</label>'
@@ -66,7 +44,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
     }
 
 
-    function showResults(questions, quizContainer, resultsContainer){
+    function showResults(questions, quizContainer, resultsContainer) {
 
         // gather answer containers from our quiz
         var answerContainers = quizContainer.querySelectorAll('.answers');
@@ -76,13 +54,13 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
         var numCorrect = 0;
 
         // for each question...
-        for(var i=0; i<questions.length; i++){
+        for (var i = 0; i < questions.length; i++) {
 
             // find selected answer
-            userAnswer = (answerContainers[i].querySelector('input[name=question'+i+']:checked')||{}).value;
+            userAnswer = (answerContainers[i].querySelector('input[name=question' + i + ']:checked') || {}).value;
 
             // if answer is correct
-            if(userAnswer===questions[i].correctAnswer){
+            if (userAnswer === questions[i].correctAnswer) {
                 // add to the number of correct answers
                 numCorrect++;
 
@@ -90,7 +68,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
                 answerContainers[i].style.color = 'lightgreen';
             }
             // if answer is wrong or blank
-            else{
+            else {
                 // color the answers red
                 answerContainers[i].style.color = 'red';
             }
@@ -104,7 +82,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
     showQuestions(questions, quizContainer);
 
     // on submit, show results
-    submitButton.onclick = function(){
+    submitButton.onclick = function () {
         showResults(questions, quizContainer, resultsContainer);
     }
 
