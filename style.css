@@ -1,26 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
 .navbar {
- /* font-family: "Lucida Console", "Courier New", monospace;*/
+ /* font-family: "Lucida Console", "Courier New", monospace;
  font-family: 'Hind Siliguri', sans-serif;
- font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+ font-family: 'IBM Plex Sans Thai Looped', sans-serif;*/
+    font-family: 'Roboto', sans-serif;
 
     font-size: large;
     color: rgb(255, 255, 255);
-    font-family: 'Hind Siliguri', sans-serif;
-font-family: 'IBM Plex Sans Thai Looped', sans-serif;
-   
 }
-/*.container-fluid{
-  font-family:  'Hind Siliguri', sans-serif;
-  font-family: 'IBM Plex Sans Thai Looped', sans-serif;
-  font-family: 'Indie Flower', cursive;
-}*/
 
 div{
-  font-family: 'Hind Siliguri', sans-serif;
-font-family: 'IBM Plex Sans Thai Looped', sans-serif;
-  background-color: #A8B1D8;
-  font-size: 1em;
+  /*font-family: 'Hind Siliguri', sans-serif;
+font-family: 'IBM Plex Sans Thai Looped', sans-serif;*/
+    font-family: 'Roboto', sans-serif;
+    background-color: #A8B1D8;
+  font-size: 1.2rem;
   color:rgb(255, 255, 255);
 }
 .carousel-inner{
@@ -30,8 +26,23 @@ font-family: 'IBM Plex Sans Thai Looped', sans-serif;
   background-color: khaki;
 }
 
+.item2 {
+    justify-content: center;
+    align-items: center;
+}
+.introduction-text {
+    /*font-family: 'Hind Siliguri', sans-serif;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;*/
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-align: center;
+    padding-top: 3.0rem;
+    font-size: 1.0rem;
+    max-width: 80%;
+}
+
 .navbar{
-  border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
 }
 .nav-link:active, .nav-link:hover {
     color: #533661 !important;
