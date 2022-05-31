@@ -169,15 +169,14 @@ font-family: 'IBM Plex Sans Thai Looped', sans-serif;*/
     top: 50%;
 }
 
-
 .hero-image {
-
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/background1.jpg");
-    height: 50%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/gemstones111.jpg");
+    height: 40rem;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+
 }
 
 .hero-text {
@@ -187,6 +186,7 @@ font-family: 'IBM Plex Sans Thai Looped', sans-serif;*/
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+    background-color: transparent;
 }
 
 .hero-text button {
