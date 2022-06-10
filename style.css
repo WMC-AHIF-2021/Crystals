@@ -158,3 +158,8 @@ font-family: 'IBM Plex Sans Thai Looped', sans-serif;
     left: 50%;
     top: 50%;
 }
+
+.navbar-nav.ms-auto
+{
+    float: left;
+}
