@@ -1,16 +1,12 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600&display=swap');*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600&family=IBM+Plex+Sans+Thai+Looped&family=Indie+Flower&display=swap');
 .navbar {
-
     font-family: 'Roboto', sans-serif;
     font-size: large;
     color: rgb(255, 255, 255);
 }
 
 div{
-  /*font-family: 'Hind Siliguri', sans-serif;
-font-family: 'IBM Plex Sans Thai Looped', sans-serif;*/
     font-family: 'Roboto', sans-serif;
     background-color: #A8B1D8;
   font-size: 1.2rem;
@@ -23,27 +19,11 @@ font-family: 'IBM Plex Sans Thai Looped', sans-serif;*/
   background-color: khaki;
 }
 
-.item2 {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.introduction-text {
-    /*font-family: 'Hind Siliguri', sans-serif;
-    font-family: 'IBM Plex Sans Thai Looped', sans-serif;*/
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    text-align: center;
-    padding-top: 3.0rem;
-    font-size: 1.0rem;
-    max-width: 80%;
-}
-
 .navbar{
     border-bottom: 1px solid #ffffff;
 }
 .nav-link:active, .nav-link:hover {
-    color: #533661 !important;
+    color: #8b57a4 !important;
   }
   .nav-link:active{
     color: rgb(33, 41, 87);
@@ -89,26 +69,37 @@ font-family: 'IBM Plex Sans Thai Looped', sans-serif;*/
   }
 
   .about-us-image {
+      background-image: url('images/cylia.png');
     width: 18.75rem;
     height: 18.75rem;
     border-radius: 50%;
     background-position: center;
     background-size: cover;
-    background-color: rgba(148, 108, 159, 0.63);
+    background-color: #8482ADFF;
   }
 
+  #about h1, h3, p{
+      text-align: center;
+  }
+  .text p{
+      padding-left: 12rem;
+  }
+ #about h1{
+     border-bottom: 0.005em solid white;
+ }
   .about-us-image-debroo {
+      background-image: url('images/debroo.png');
     width: 18.75rem;
     height: 18.75rem;
     border-radius: 50%;
     background-position: center;
     background-size: cover;
-    background-color: rgba(148, 108, 159, 0.63);
+    background-color: #8482ADFF;
   }
-
+  
   .footer{
       text-align: center;
-
+      padding-top: 0.00111rem;
   }
   .dropdown-submenu { /*dropdown to dropdown Funktion*/
     position: relative;
@@ -148,35 +139,64 @@ font-family: 'IBM Plex Sans Thai Looped', sans-serif;*/
     display: block;
   }
 
- /*Symbol der ladet*/
-  #LoadingSymbolS {
+.preload {
     position: fixed;
-    left: 0;
     top: 0;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-    background-color: #A8B1D8;
-    z-index: 1;
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease;
+    z-index: 10000;
 }
 
-#loadingSysmbol {
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    left: 50%;
-    top: 50%;
+.preload-finish {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.crystal {
+    width: 6em;
+    height: 6em;
+    animation: crystal 1s ease infinite alternate;
+}
+
+@keyframes crystal {
+    from {
+        transform: translateY(0em);
+    }
+    to {
+        transform: translateY(3em);
+    }
+}
+
+.introduction-text {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-align: center;
+    padding-top: 6rem;
+    color: #ffffff;
+}
+.introduction-text h1{
+    font-size: 3rem;
+
+}
+#leftText{
+    font-size: 1.3rem;
+}
+#rightText{
+    font-size: 1.1rem;
 }
 
 .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/gemstones111.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.57), rgba(0, 0, 0, 0.56)), url("images/gemstones111.jpg");
     height: 40rem;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    padding-right: 1rem;
     position: relative;
-
 }
 
 .hero-text {
@@ -195,12 +215,94 @@ font-family: 'IBM Plex Sans Thai Looped', sans-serif;*/
     display: inline-block;
     padding: 10px 25px;
     color: black;
-    background-color: #ddd;
+    background-color: #e0e0e0;
     text-align: center;
     cursor: pointer;
 }
 
 .hero-text button:hover {
-    background-color: #555;
+    background-color: #826e9d;
     color: white;
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/*helpers*/
+.grid-container1{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    background-color: #A8B1D8;
+}
+
+/* Popup container */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: rgb(171, 79, 79);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(135, 93, 166) transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+.helpers{
+
+}
+
+.witch{
+    width: 20em;
+    height: 20em;
+    padding-top: 8em;
 }

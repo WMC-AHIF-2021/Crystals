@@ -22,10 +22,12 @@
   - dropdown
   - linie unterm crystal wegmachen
   -->
-
   <body class="bg-light text-dark">
-    <div id="LoadingSymbol">
-			<img id="loadingSysmbol" src="images/gems.png" alt="LoadingSymbol">
+
+    <!-- Loading Symbol -->
+    <div class="preload">
+      <img class="crystal" src="images/gems.png" alt="crystal Image"/>
+      <h1>Crystals</h1>
     </div>
 
     <!--Navbar-->
@@ -47,7 +49,7 @@
               <a class="nav-link" aria-current="page" style="color: #ffffff;" href="#home">Home   </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" style="color: #ffffff;" href="#explore">Explore   </a>
+              <a class="nav-link" aria-current="page" style="color: #ffffff;" href="#explore">Find your Crystal   </a>
             </li>
 
             
@@ -247,7 +249,7 @@
              </script>
 
              <ul class="navbar-nav ms-auto">
-            <li class="nav-item " >
+            <li class="topnav-right" >
               <a class="nav-link" style="color: #ffffff;" href="#about">About us</a>
             </li>
             </ul>
@@ -293,33 +295,45 @@
     </div>
   </div>
 
-  <!--<div style="padding:0%">
-    <h1>Our WebSite</h1>
-  <p>You may wonder why we started this Website and what you can do on it? This is easy to answer. First of all the website is a school project and we decided that our topic is CRYSTALS.
-    At first we did not even know where we should start, that's why we have to do it all on the end of semester (it's a little stressing). 
-  </p>
-  </div>-->
-
     <!--Introduction-->
-    <div class="item2" style="padding-top: 2rem; text-align: center;">
+    <!-- MUSS SICH NOCH BEWEGEN!!!!!-->
+    <div class="grid-container1">
+    <div class="item11" >
       <div class="introduction-text reveal">
-        <h2>Welcome to our webpage!!!<br/></h2>
+        <h1>Welcome to our webpage!!!<br/></h1>
         <p id="leftText">
           You want to know what kind of crystals there are?<br/>
           Well, then you are at the right place!<br/><br/>
           Find out about healing properties crystals have and MUCH MORE!
+        </p>
         <p id="rightText">
         <br/>
-        Our little helpers on the sides
+        Our little helper on the sides
         will lead you through our website:)
         </p>
-        </p>
       </div>
+      </div>
+      <!-- Helpers
+      https://www.w3schools.com/howto/howto_css_zoom_hover.asp
+      https://www.w3schools.com/howto/howto_css_zoom_hover.asp
+      https://www.w3schools.com/howto/howto_js_popup.asp
+      -->
+      <div class="item22">
+      <div class="helpers">
+        <div>
+        <div class="popup" onclick="myFunction()">
+          <img class="witch" src="images/witch.png" alt="witch">
+          <span class="popuptext" id="myPopup">Hey! I'm Lilly:) Your little helper. I'm going accompany you through this website. If you need help you can find me all over the website:)</span>
+        </div>
+          </div>
+      </div>
+    </div>
+    </div>
 
 
   <div class="explore" id="explore" style="padding-top: 7rem; padding-left: 7rem; padding-bottom: 10rem;">
-    <h1>Explore</h1>
-    <div  class="hero-image">
+
+    <div class="hero-image">
       <div class="hero-text">
         <h1 style="font-size: 3.125rem">Find Your Crystal </h1>
         <p>What's your crystal?</p>
@@ -335,26 +349,27 @@
           <h1 style="font-size: 3.125rem">About us</h1>
          
           <div class="my-5">
-            <div class="about-us-image float-lg-start mx-auto mx-lg-8" style="background-image: url('images/cylia.png')"></div>
+            <div class="about-us-image float-lg-start mx-auto mx-lg-8"></div>
+            </div>
             <div class="p-lg-5">
               <h3 class="fs-2 textcolor">Cilia Pöllhuber</h3> <!-- 1. Person -->
               <p>
                 Hey, my name is Cilia Pöllhuber. I'm 16 years old, and my favorite hobbies include baking, dancing, simping over some cute boys and socializing with my friends on a daily basis.
                 I'm also a big fan of drawing, painting and of course CRYSTALS. I love to sketch whatever comes to mind and try out new techniques. I also play tennis in my freetime.
-                If you have a question you can reach me under cilia.pollhuber@gmail.com :) 
+                If you have a question you can reach me under cilia.pollhuber@gmail.com :)
               </p>
             </div>
            
           </div>
     
           <div class="my-5">
-            <div class="about-us-image float-lg-end mx-auto mx-lg-5" style="background-image: url('images/debroo.png'); padding-bottom: 10em;"></div>
-            <div class="p-lg-5">
+            <div class="about-us-image-debroo float-lg-end mx-auto mx-lg-5 " style=""></div>
+            <div class="p-lg-5 text">
               <h3 class="fs-2 textcolor">Deborah Benza</h3> <!-- 2. Person -->
               <p style="padding-bottom: 2rem">
                 Hey! My name is Deborah Benza. I'm 16 years old and live near Vöcklabruck. I really like to travel and in my free time I do a lot of activities outside like playing
-        basketball, windsurfing or skateboarding. I also love play piano and guitar. 
-        If you have any questions you can always contact me under dbenza69@gmail.com
+                basketball, windsurfing or skateboarding. I also love play piano and guitar.
+                If you have any questions you can always contact me under dbenza69@gmail.com
               </p>
             </div>
             
@@ -363,7 +378,6 @@
           </div>
         </div>
       </div>
-
     </div>
 
     <div style="background-color: white; color: #394464">
