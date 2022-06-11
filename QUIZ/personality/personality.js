@@ -6,12 +6,12 @@ var prompts = [
 
     },
     {
-        prompt: 'I get so lost in my thoughts I ignore or forget my surroundings',
+        prompt: 'I like to spend time alone',
         weight: -1,
         class: 'group1'
     },
     {
-        prompt: 'I do not usually initiate conversations',
+        prompt: 'I do not usually start conversations',
         weight: -1,
         class: 'group2'
     },
@@ -26,7 +26,7 @@ var prompts = [
         class: 'group4'
     },
     {
-        prompt: 'I find it difficult to tell stories about myself',
+        prompt: 'I find it difficult to tell about myself',
         weight: -1,
         class: 'group5'
     },
@@ -51,12 +51,12 @@ var prompts = [
         class: 'group9'
     },
     {
-        prompt: 'I often do not feel I have to justify myself to people',
+        prompt: 'I often do not feel that I have to explain myself to people',
         weight: 1,
         class: 'group10'
     },
     {
-        prompt: 'I would rather improvise than spend time coming up with a detailed plan',
+        prompt: 'I would rather improvise than spend time to make a plan',
         weight: 1,
         class: 'group11'
     }
@@ -105,6 +105,30 @@ function createPromptItems() {
         document.getElementById('quiz').appendChild(prompt_li);
     }
 }
+/*const container = document.querySelector('.blogs');
+
+const renderPosts = async () => {
+    let uri = 'http://localhost:3000/posts';
+
+    const res = await fetch(uri);
+    const posts = await res.json();
+
+    let template = '';
+    posts.forEach(post => {
+        template += ` 
+            <div class="post">
+                <h2>${post.title}</h2>
+                <p><small>${post.likes} likes</small></p>p>
+                <p>${post.body.slice(0, 200)}</p>
+                <a href="/index.html">read more...</a>
+           
+            </div>
+        `
+    })
+    container.innerHTML = template;
+}
+
+window.addEventListener('DOMContentLoaded', () => renderPosts());*/
 
 function createValueButtons() {
     for (var li_index = 0; li_index < prompts.length; li_index++) {

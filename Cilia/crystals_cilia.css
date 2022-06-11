@@ -1,21 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
 .navbar {
- /* font-family: "Lucida Console", "Courier New", monospace;*/
- font-family: 'Hind Siliguri', sans-serif;
- font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    font-family: 'Roboto', sans-serif;
     
     background-color: #A8B1D8;
     background-size: auto;
     color: #ffffff;
-}
-
-.navbar {
-  font-family: 'Hind Siliguri', sans-serif;
-  font-family: 'IBM Plex Sans Thai Looped', sans-serif;
-    font: bold;
+    font-family: 'Roboto', sans-serif;
+    font-family: bold;
     font-size: large;
     color: rgb(255, 255, 255);
-   
 }
 
 .nav-link:active, .nav-link:hover {
@@ -23,7 +16,7 @@
 }
 .nav-link:active{
   color:rgb(71, 82, 146);
-  font: bold;
+  font-family: bold;
   
 }
 
@@ -97,7 +90,7 @@ p {
 }
 
 h1, h2, h3{
-  font: bold;
+  font-family: bold;
   
   color: #ffffff;
   text-align: center;
@@ -120,7 +113,7 @@ a:visited{
 }
 
 .dropdown-submenu .dropdown-menu { /*dropdown to dropdown einstellungen*/
-  top: 1;
+  top: 1rem;
   left: 100%;
   margin-top: -20px;
 }
@@ -139,7 +132,7 @@ a:visited{
   color: #A8B1D8;
   padding: 3px 5px;
   text-decoration: none;
-  font: bold;
+  font-family: bold;
   display: block;
 }
 

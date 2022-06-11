@@ -1,15 +1,17 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600&display=swap');
 .navbar {
-  font-family: "Lucida Console", "Courier New", monospace;
-    font: bold;
+    font-family: "Lucida Console", "Courier New", monospace;
+
     font-size: large;
     color: rgb(255, 255, 255);
    
 }
 div{
-  font-family: "Lucida Console", "Courier New", monospace;
-  background-color: #A8B1D8;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-family: 'Roboto', sans-serif;
+
+    background-color: #A8B1D8;
 }
 
 .navbar{

@@ -4,3 +4,4 @@ window.addEventListener("load", () => {
     LoadingSymbol.style.visibility = "hidden";
     LoadingSymbol.style.opacity = "0";
 })
+
