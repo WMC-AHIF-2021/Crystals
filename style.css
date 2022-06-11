@@ -1,26 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600&family=IBM+Plex+Sans+Thai+Looped&family=Indie+Flower&display=swap');
 .navbar {
- /* font-family: "Lucida Console", "Courier New", monospace;*/
- font-family: 'Hind Siliguri', sans-serif;
- font-family: 'IBM Plex Sans Thai Looped', sans-serif;
-
+    font-family: 'Roboto', sans-serif;
     font-size: large;
     color: rgb(255, 255, 255);
-    font-family: 'Hind Siliguri', sans-serif;
-font-family: 'IBM Plex Sans Thai Looped', sans-serif;
-   
 }
-/*.container-fluid{
-  font-family:  'Hind Siliguri', sans-serif;
-  font-family: 'IBM Plex Sans Thai Looped', sans-serif;
-  font-family: 'Indie Flower', cursive;
-}*/
 
 div{
-  font-family: 'Hind Siliguri', sans-serif;
-font-family: 'IBM Plex Sans Thai Looped', sans-serif;
-  background-color: #A8B1D8;
-  font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    background-color: #A8B1D8;
+  font-size: 1.2rem;
   color:rgb(255, 255, 255);
 }
 .carousel-inner{
@@ -31,13 +20,13 @@ font-family: 'IBM Plex Sans Thai Looped', sans-serif;
 }
 
 .navbar{
-  border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
 }
 .nav-link:active, .nav-link:hover {
-    color: #533661 !important;
+    color: #8b57a4 !important;
   }
   .nav-link:active{
-    color:rgb(71, 82, 146);
+    color: rgb(33, 41, 87);
     font-weight: bold;
   }
   .grid-container 
@@ -66,11 +55,10 @@ font-family: 'IBM Plex Sans Thai Looped', sans-serif;
 }
 
 .flex-container > div
-{     
-     background-color: #A8B1D8;
-     padding-right: 50px;
-     padding-left: 50px;
-     background-color: grey;
+{
+     padding-right: 3.125rem;
+     padding-left: 3.125rem;
+     background-color: #d71717;
 }
 
   .slide-image {
@@ -81,24 +69,38 @@ font-family: 'IBM Plex Sans Thai Looped', sans-serif;
   }
 
   .about-us-image {
-    width: 300px;
-    height: 300px;
+      background-image: url('images/cylia.png');
+    width: 18.75rem;
+    height: 18.75rem;
     border-radius: 50%;
     background-position: center;
     background-size: cover;
-    background-color: #A8B1D8;
+    background-color: #8482ADFF;
   }
 
+  #about h1, h3, p{
+      text-align: center;
+  }
+  .text p{
+      padding-left: 12rem;
+  }
+ #about h1{
+     border-bottom: 0.005em solid white;
+ }
   .about-us-image-debroo {
-    width: 300px;
-    height: 300px;
+      background-image: url('images/debroo.png');
+    width: 18.75rem;
+    height: 18.75rem;
     border-radius: 50%;
     background-position: center;
     background-size: cover;
-    background-color: #A8B1D8;
-    
+    background-color: #8482ADFF;
   }
-
+  
+  .footer{
+      text-align: center;
+      padding-top: 0.00111rem;
+  }
   .dropdown-submenu { /*dropdown to dropdown Funktion*/
     position: relative;
     cursor: pointer;
@@ -128,7 +130,6 @@ font-family: 'IBM Plex Sans Thai Looped', sans-serif;
     color: #A8B1D8;
     padding: 3px 5px;
     text-decoration: none;
-    font-weight: bold;
     display: block;
   }
   
@@ -138,28 +139,170 @@ font-family: 'IBM Plex Sans Thai Looped', sans-serif;
     display: block;
   }
 
- /*Symbol der ladet*/
-  #LoadingSymbolS {
+.preload {
     position: fixed;
-    left: 0;
     top: 0;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-    background-color: #A8B1D8;
-    z-index: 1;
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease;
+    z-index: 10000;
 }
 
-#loadingSysmbol {
+.preload-finish {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.crystal {
+    width: 6em;
+    height: 6em;
+    animation: crystal 1s ease infinite alternate;
+}
+
+@keyframes crystal {
+    from {
+        transform: translateY(0em);
+    }
+    to {
+        transform: translateY(3em);
+    }
+}
+
+.introduction-text {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-align: center;
+    padding-top: 6rem;
+    color: #ffffff;
+}
+.introduction-text h1{
+    font-size: 3rem;
+
+}
+#leftText{
+    font-size: 1.3rem;
+}
+#rightText{
+    font-size: 1.1rem;
+}
+
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.57), rgba(0, 0, 0, 0.56)), url("images/gemstones111.jpg");
+    height: 40rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-right: 1rem;
+    position: relative;
+}
+
+.hero-text {
+    text-align: center;
     position: absolute;
-    width: 150px;
-    height: 150px;
-    left: 50%;
     top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: transparent;
 }
 
-.navbar-nav.ms-auto
-{
-    float: left;
+.hero-text button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #e0e0e0;
+    text-align: center;
+    cursor: pointer;
+}
+
+.hero-text button:hover {
+    background-color: #826e9d;
+    color: white;
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/*helpers*/
+.grid-container1{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    background-color: #A8B1D8;
+}
+
+/* Popup container */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: rgb(171, 79, 79);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(135, 93, 166) transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+.helpers{
+
+}
+
+.witch{
+    width: 20em;
+    height: 20em;
+    padding-top: 8em;
 }
