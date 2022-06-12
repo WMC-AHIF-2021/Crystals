@@ -7,16 +7,10 @@
     border-bottom: 1px solid #ffffff;
 }
 
-.navbar {
-
+body {
     font-family: 'Roboto', sans-serif;
-    font-size: large;
-    color: rgb(255, 255, 255);
-}
-/*body
-{
     background-color: #A8B1D8;
-}*/
+}
 
 div{
     font-family: 'Roboto', sans-serif;
@@ -24,6 +18,7 @@ div{
     font-size: 1em;
     color:rgb(255, 255, 255);
 }
+
 .hud-prefix
 {
     text-align: center;
@@ -36,14 +31,14 @@ div{
 }
 
 * {
-    font-family: 'Lato', sans-serif;
-    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
 }
 
 
 .prompt {
     display: block;
-    font-size: 20px;
+    font-size: 2em;
 }
 
 .btn {

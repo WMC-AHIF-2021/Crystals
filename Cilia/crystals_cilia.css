@@ -2,14 +2,16 @@
 
 .navbar {
     font-family: 'Roboto', sans-serif;
-    
     background-color: #A8B1D8;
     background-size: auto;
     color: #ffffff;
     font-family: 'Roboto', sans-serif;
-    font-family: bold;
     font-size: large;
     color: rgb(255, 255, 255);
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
 }
 
 .nav-link:active, .nav-link:hover {
@@ -17,8 +19,10 @@
 }
 .nav-link:active{
   color:rgb(71, 82, 146);
-  font-family: bold;
-  
+}
+
+h1,h2,h3{
+    font-family: 'Roboto', sans-serif;
 }
 
 .img{
@@ -91,10 +95,22 @@ p {
 }
 
 h1, h2, h3{
-  font-family: bold;
+
   
   color: #ffffff;
   text-align: center;
+}
+
+h1{
+    font-size: 3em;
+}
+
+h3{
+    font-size: 2em;
+}
+
+p{
+    font-size: 1.2em;
 }
 
 a {
