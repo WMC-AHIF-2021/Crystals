@@ -295,3 +295,7 @@ div{
     margin-top: 30px;
     margin-bottom: 30px;
 }
+
+.container.text-center.bottom {
+    background-color: #818BB0;
+}
