@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+.popUp {
+    display: none;
+    box-shadow: #9a4545;
+    font-family: 'Roboto', sans-serif;
+    background-color: #5C6689;
+    border-radius: 10px;
+    border: 1px solid #6f5da6;
+    position: fixed;
+    z-index: 99;
+    width: auto;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.popUp1{
+    display: none;
+    box-shadow: #9a4545;
+    font-family: 'Roboto', sans-serif;
+    background-color: #5C6689;
+    border-radius: 10px;
+    border: 1px solid #6f5da6;
+    position: fixed;
+    z-index: 99;
+    width: 45rem;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#popUpTitle, #popUpTitle1, #popUpTitle2 {
+
+    padding-top: 2vh;
+    padding-left: 2em;
+    padding-right: 2em;
+    font-size: 3rem;
+    user-select: none;
+}
+
+#facts,#facts1, #facts2  {
+    user-select: none;
+    color: white;
+    padding: 2vh;
+    font-size: 2.3vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+#highlight_close, #highlight_close1, #highlight_close2 {
+    cursor: pointer;
+    height: 4vh;
+    padding: 1vh;
+    float: right;
+    background-color: white;
+    border-radius: 0 0.625em 0 0;
+}
+
+@media only screen and (max-width: 43.75em){
+    #popUpTitle, #popUpTitle1, #popUpTitle2{
+        font-size: 2rem;
+    }
+}

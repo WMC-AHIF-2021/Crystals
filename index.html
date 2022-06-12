@@ -29,7 +29,7 @@
       <img class="crystal" src="images/gems.png" alt="crystal Image"/>
       <h1>Crystals</h1>
     </div>
-
+  <div class="website-counter">
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg sticky-top" style=" background-color: #A8B1D8;" >
       <nav class="navbar">
@@ -308,7 +308,7 @@
         </p>
         <p id="rightText">
         <br/>
-        Our little helper on the sides
+        Our little witch on the side
         will lead you through our website:)
         </p>
       </div>
@@ -317,25 +317,43 @@
       https://www.w3schools.com/howto/howto_css_zoom_hover.asp
       https://www.w3schools.com/howto/howto_css_zoom_hover.asp
       https://www.w3schools.com/howto/howto_js_popup.asp
+
+       <div class="item22">
+      <h2 id="new">Are you new here?</h2>
+      <button id="reset">Yes!</button>
+      <button id="no-reset">No, I already visited your website:)</button>
+      </div>
       -->
-      <div class="item22">
-      <div class="helpers">
-        <div>
-        <div class="popup" onclick="myFunction()">
-          <img class="witch" src="images/witch.png" alt="witch">
-          <span class="popuptext" id="myPopup">Hey! I'm Lilly:) Your little helper. I'm going accompany you through this website. If you need help you can find me all over the website:)</span>
-        </div>
-          </div>
+
+      <img class="witch reveal website-counter" onclick="openForm()" src="images/witch.png" alt="witch">
+      <div class="popUp" id="myForm">
+        <img
+                src="images/remove.png"
+                onclick="closeForm()"
+                id="highlight_close"
+                alt="Close Icon"
+        />
+        <h2 id="popUpTitle">Hey There!!</h2>
+        <p id="facts"></p>
       </div>
     </div>
-    </div>
-
 
   <div class="explore" id="explore" style="padding-top: 7rem; padding-left: 7rem; padding-bottom: 10rem;">
 
     <div class="hero-image" style="margin-right: 100px">
       <div class="hero-text">
         <h1 style="font-size: 3.125rem">Find Your Crystal </h1>
+        <img class="witch find"  onclick="openForm1()" src="images/witch.png" alt="witch">
+        <div class="popUp1" id="myForm1">
+          <img
+                  src="images/remove.png"
+                  onclick="closeForm()"
+                  id="highlight_close1"
+                  alt="Close Icon"
+          />
+          <h2 id="popUpTitle1">Hey again!!</h2>
+          <p id="facts1"></p>
+        </div>
         <p>What's your crystal?</p>
         <a href="QUIZ/find-crystal.html"><button>Find Out Here</button></a>
 
@@ -347,7 +365,17 @@
         <div style="background-color: #A8B1D8;">
         <div id="about" class="container" style="background-color: #A8B1D8;">
           <h1 style="font-size: 3.125rem">About us</h1>
-         
+          <img class="witch2"  onclick="openForm2()" src="images/witch.png" alt="witch">
+          <div class="popUp1" id="myForm2">
+            <img
+                    src="images/remove.png"
+                    onclick="closeForm()"
+                    id="highlight_close2"
+                    alt="Close Icon"
+            />
+            <h2 id="popUpTitle2">Oh Hey!!</h2>
+            <p id="facts2"></p>
+          </div>
           <div class="my-5">
             <div class="about-us-image float-lg-start mx-auto mx-lg-8"></div>
             </div>
@@ -379,11 +407,10 @@
         </div>
       </div>
     </div>
-
-    <div style="background-color: white; color: #394464">
     <footer class="footer">
       <h4>Copyright - Cilia Pöllhuber & Deborah Benza</h4>
     </footer>
+    </div>
     </div>
           <script
           src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"

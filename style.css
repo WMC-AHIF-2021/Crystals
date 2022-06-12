@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600&family=IBM+Plex+Sans+Thai+Looped&family=Indie+Flower&display=swap');
+@import url("helper.css");
+@import url("script.js");
 .navbar {
     font-family: 'Roboto', sans-serif;
     font-size: large;
@@ -11,12 +12,6 @@ div{
     background-color: #A8B1D8;
   font-size: 1.2rem;
   color:rgb(255, 255, 255);
-}
-.carousel-inner{
-  background-color: khaki;
-}
-.backgroundpic{
-  background-color: khaki;
 }
 
 .navbar{
@@ -96,7 +91,7 @@ div{
     background-size: cover;
     background-color: #8482ADFF;
   }
-  
+
   .footer{
       text-align: center;
       padding-top: 0.00111rem;
@@ -227,7 +222,7 @@ div{
 
 .reveal{
     position: relative;
-    transform: translateY(150px);
+    transform: translateY(9.375em);
     opacity: 0;
     transition: 2s all ease;
 }
@@ -244,65 +239,32 @@ div{
     background-color: #A8B1D8;
 }
 
-/* Popup container */
-.popup {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
+.item22{
+    grid-column-start: 2;
+    grid-column-end: 3;
 }
 
-/* The actual popup (appears on top) */
-.popup .popuptext {
-    visibility: hidden;
-    width: 160px;
-    background-color: rgb(171, 79, 79);
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 8px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -80px;
-}
 
-/* Popup arrow */
-.popup .popuptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: rgb(135, 93, 166) transparent transparent transparent;
-}
-
-/* Toggle this class when clicking on the popup container (hide and show the popup) */
-.popup .show {
-    visibility: visible;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s
-}
-
-/* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
-@keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity:1 ;}
-}
-
-.helpers{
-
+#myForm, #myForm1{
+    display: none;
 }
 
 .witch{
-    width: 20em;
+    width: 17em;
     height: 20em;
-    padding-top: 8em;
+    padding-top: 4em;
 }
+
+.find{
+    width: 8em;
+    height: 8em;
+    padding-top: 0.00em;
+}
+
+.witch2{
+    width: 5.5em;
+    height: 4.5em;
+    padding-right: 1em;
+}
+
+
