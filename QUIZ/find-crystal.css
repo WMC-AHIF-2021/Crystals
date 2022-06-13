@@ -132,9 +132,8 @@ div{
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto;
-
     grid-gap:10px;
-    padding: 10px;
+    padding: 100px;
 }
 
 .colorButton{
