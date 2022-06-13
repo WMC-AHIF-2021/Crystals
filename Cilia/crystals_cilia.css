@@ -78,11 +78,21 @@ width: 60px;
     border-bottom: 1px solid #A8B1D8;
 }
 
+.image:hover{
+    width: 15.5em;
+    height: 15.5em;
+}
+
 .outfitImg
 {
   width: 18em;
   height: 18em;
   padding-left: 30px;
+}
+
+.outfitImg:hover{
+    width: 19em;
+    height: 19em;
 }
 
 .div-s {
@@ -164,4 +174,9 @@ a:visited{
     width: 5.5em;
     height: 4.5em;
     padding-right: 1em;
+}
+
+.witch2:hover{
+    width: 6em;
+    height: 5em;
 }

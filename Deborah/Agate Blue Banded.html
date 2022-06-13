@@ -10,6 +10,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!--fürs Multi-Level-Dropdown-->
 
     <title>Crystals - Agate Blue Banded</title>
+      <link rel="stylesheet" href="../helper.css">
+      <link rel="icon" href="../../Crystals/images/gems.png">
+      <script src="script/script-deborah.js"></script>
    </head>
    <body >
 
@@ -22,7 +25,7 @@
           </div>
         </nav>
         <div class="container-fluid">
-          <a class="navbar-brand" href="#" style="color: #ffffff;">C&D - Crystals & Outfits</a>
+            <a class="navbar-brand" href="#" style="color: #ffffff; font-size: 1.4em">C&D - Crystals & Outfits</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -239,12 +242,23 @@
         <div class="grid-container" id="blackLava">
           <div class="item4" style="padding-bottom: 60px;">  
 
-       <h1 style="padding-right: 50px;" ><b>Agate Blue Banded</b></h1>
+       <h1 style="padding-right: 50px;" >Agate Blue Banded</h1>
 
         
       </div>
         <div class="item1">
-        <h3><b>Information</b></h3>
+        <h3>Information</h3>
+            <img class="witch2"  onclick="openForm1()" src="../images/witch.png" alt="witch">
+            <div class="popUp1" id="myForm2">
+                <img
+                        src="../images/remove.png"
+                        onclick="closeForm()"
+                        id="highlight_close2"
+                        alt="Close Icon"
+                />
+                <h2 id="popUpTitle2">Hey!!</h2>
+                <p id="facts2"></p>
+            </div>
             <p>
                 Blue Banded Agate is a blue with soft white banding crystal found in Germany, Brazil, Egypt, Italy, Madagascar, Mexico and Scotland. <br>
                 The blue of the stone is associated with truth, loyalty and reliability. <br>
@@ -259,7 +273,7 @@
           </div>
           <div class="item2">
 
-        <h3><b>Health Benefits</b></h3>
+        <h3>Health Benefits</h3>
         <p>
             Here can you find some Healing Properties. <a href="https://meanings.crystalsandjewelry.com/blue-lace-agate/"><img src="body.png" alt="body" style="height: 40px; width: 40px;"></a> 
         </p>
@@ -267,8 +281,8 @@
         <img class="image" src="Agate Blue Banded.jpg" width="1000px" height="500px" >
       </div>
       <div class="item3">
-        <h3><b>Outfits</b></h3>
-        <p>Some outfits inspos who match perfectly with the blue stone</p>
+        <h3>Outfits</h3>
+
             <img class="outfitImg" src="Outfits/bluee.jpeg" style="padding: 20px;" width="300em" height="350em" >
             <img class="outfitImg" src="Outfits/BlueBanded2.jpg" style="padding: 20px;" width="300em" height="350em">
             <img class="outfitImg" src="Outfits/BlueBanded3.jpeg" style="padding: 20px;" width="300em" height="350em">

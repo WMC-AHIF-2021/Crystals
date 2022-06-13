@@ -82,7 +82,12 @@ h1,h2,h3{
 {
     width: 18em;
     height: 18em;
-    padding-left: 30px;
+    padding-left: 15em;
+}
+
+.outfitImg:hover{
+    width: 19em;
+    height: 19em;
 }
 
 .div-s {
@@ -149,8 +154,12 @@ a:visited{
     color: #A8B1D8;
     padding: 3px 5px;
     text-decoration: none;
-
     display: block;
+}
+
+.image:hover{
+    width: 15.5em;
+    height: 15.5em;
 }
 
 .dropdown-content a:hover {background-color: #dbe0f5} /*Farbe des Dropdowns*/
@@ -159,6 +168,10 @@ a:visited{
     display: block;
 }
 
+.witch2:hover{
+    width: 6em;
+    height: 5em;
+}
 
 .witch2{
     width: 5.5em;
