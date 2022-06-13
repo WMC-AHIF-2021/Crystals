@@ -10,7 +10,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!--fürs Multi-Level-Dropdown-->
       <link rel="icon" href="../../Crystals/images/gems.png">
       <title>Crystals - Ruby</title>
-   </head>
+      <link rel="stylesheet" href="../helper.css">
+      <script src="script/script-cilia.js"></script>
+  </head>
    <body >
 
     <nav class="navbar navbar-expand-lg sticky-top" style=" background-color: #A8B1D8;" >
@@ -248,6 +250,17 @@
       </div>
         <div class="item1">
         <h3>Information</h3>
+            <img class="witch2"  onclick="openForm1()" src="../images/witch.png" alt="witch">
+            <div class="popUp1" id="myForm2">
+                <img
+                        src="../images/remove.png"
+                        onclick="closeForm()"
+                        id="highlight_close2"
+                        alt="Close Icon"
+                />
+                <h2 id="popUpTitle2">Hey!!</h2>
+                <p id="facts2"></p>
+            </div>
             <p>
                 The finest rubies come from Burma (Myanmar). They are also mined in Afghanistan, 
                 Australia, Cambodia, India, Madagascar, Malawi, Mozambique, Pakistan, Sri Lanka, 

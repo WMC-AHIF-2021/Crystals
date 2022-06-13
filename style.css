@@ -267,4 +267,10 @@ div{
     padding-right: 1em;
 }
 
+.website-counter{
+    color: white;
+}
 
+.counter:hover{
+    color: white;
+}

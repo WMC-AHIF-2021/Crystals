@@ -10,7 +10,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!--fürs Multi-Level-Dropdown-->
 
     <title>Crystals - Aegirine</title>
-   </head>
+      <link rel="stylesheet" href="../helper.css">
+      <link rel="icon" href="../../Crystals/images/gems.png">
+      <script src="script/script-deborah.js"></script>
+  </head>
    <body >
 
     <nav class="navbar navbar-expand-lg sticky-top" style=" background-color: #A8B1D8;" >
@@ -22,7 +25,7 @@
           </div>
         </nav>
         <div class="container-fluid">
-          <a class="navbar-brand" href="#" style="color: #ffffff;">C&D - Crystals & Outfits</a>
+            <a class="navbar-brand" href="#" style="color: #ffffff; font-size: 1.4em">C&D - Crystals & Outfits</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -239,12 +242,23 @@
         <div class="grid-container" id="blackLava">
           <div class="item4" style="padding-bottom: 60px;">  
 
-       <h1 style="padding-right: 50px;" ><b>Aegirine</b></h1>
+       <h1 style="padding-right: 50px;" >Aegirine</h1>
 
         
       </div>
         <div class="item1">
-        <h3><b>Information</b></h3>
+        <h3>Information</h3>
+            <img class="witch2"  onclick="openForm2()" src="../images/witch.png" alt="witch">
+            <div class="popUp1" id="myForm2">
+                <img
+                        src="../images/remove.png"
+                        onclick="closeForm()"
+                        id="highlight_close2"
+                        alt="Close Icon"
+                />
+                <h2 id="popUpTitle2">Hey!!</h2>
+                <p id="facts2"></p>
+            </div>
             <p>
               Aegirine is a pyroxene Mineral which is found in alkaline igneous rocks in Countries
               like Sweden, Spain, Russia, Greenland, Tanzania, Malawi, USA and Canada.
@@ -264,7 +278,7 @@
           </div>
           <div class="item2">
 
-        <h3><b>Health Benefits</b></h3>
+        <h3>Health Benefits</h3>
         <p>
             Here can you find some Healing Properties. <a href="https://www.healing-crystals-for-you.com/aegirine.html"><img src="body.png" alt="body" style="height: 40px; width: 40px;"></a> 
         </p>
@@ -272,8 +286,8 @@
         <img class="image" src="Aegirine.jpg" width="1000px" height="500px" >
       </div>
       <div class="item3">
-        <h3><b>Outfits</b></h3>
-        <p>Some outfits inspos who match perfectly with the black green stone</p>
+        <h3>Outfits</h3>
+
             <img class="outfitImg" src="Outfits/Aegirine1.jpeg" style="padding: 20px;" width="300em" height="350em" >
             <img class="outfitImg" src="Outfits/Aegirine2.jpeg" style="padding: 20px;" width="300em" height="350em" >
             <img class="outfitImg" src="Outfits/Aegirine3.jpeg" style="padding: 20px;" width="300em" height="350em">

@@ -86,7 +86,7 @@ width: 60px;
 }
 
 .div-s {
-  background-color: #606b92;
+  background-color: #A8B1D8;
   padding: 11px;
 }
 
@@ -149,7 +149,7 @@ a:visited{
   color: #A8B1D8;
   padding: 3px 5px;
   text-decoration: none;
-  font-family: bold;
+  
   display: block;
 }
 
@@ -157,4 +157,11 @@ a:visited{
 
 .dropdown:hover .dropdown-content { /*dropdown Funktion*/
   display: block;
+}
+
+
+.witch2{
+    width: 5.5em;
+    height: 4.5em;
+    padding-right: 1em;
 }
