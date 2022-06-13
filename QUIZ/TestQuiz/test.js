@@ -10,7 +10,7 @@ const timeGauge = document.getElementById("timeGauge");
 const progress = document.getElementById("progress");
 const scoreDiv = document.getElementById("scoreContainer");
 
-// create our questions
+// create questions
 let questions = [
     {
         question : "A Amethyst helps to ...",

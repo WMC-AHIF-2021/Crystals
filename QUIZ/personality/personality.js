@@ -76,7 +76,7 @@ var prompt_values = [
     },
     {
         value: 'Neutral',
-        class: 'btn-default',
+        class: 'btn-default neutral',
         weight: 0
     },
     {
@@ -191,7 +191,8 @@ $('.value-btn').mousedown(function () {
     var this_group = classArr[0];
     // console.log(this_group);
 
-    //if the button has been selected, de-select it when click, if not de-select any selected buttons and select the one just clicked
+    //if the button has been selected, de-select it by click,
+    // if not de-select any selected buttons and select the one just clicked
     if($(this).hasClass('active')) {
         $(this).removeClass('active');
         total -= (findPromptWeight(prompts, this_group) * findValueWeight(prompt_values, $(this).text()));
@@ -201,24 +202,21 @@ $('.value-btn').mousedown(function () {
         // console.log($('.'+this_group+'.active').text());
         $('.'+this_group).removeClass('active');
 
-        // console.log('group' + findValueWeight(prompt_values, $('.'+this_group).text()));
-        // $(this).prop('checked', true);
         $(this).addClass('active');
         total += (findPromptWeight(prompts, this_group) * findValueWeight(prompt_values, $(this).text()));
     }
     console.log(total);
 })
 
-
+// document.getElementById('intro-bar').style.width = ((total / 60) * 100) + '%';
+// console.log(document.getElementById('intro-bar').style.width);
+// document.getElementById('intro-bar').innerHTML= ((total / 60) * 100) + '%';
 
 $('#submit-btn').click(function () {
     $('.results').removeClass('hide');
     $('.results').addClass('show');
 
     if(total < 0) {
-        // document.getElementById('intro-bar').style.width = ((total / 60) * 100) + '%';
-        // console.log(document.getElementById('intro-bar').style.width);
-        // document.getElementById('intro-bar').innerHTML= ((total / 60) * 100) + '%';
         document.getElementById('results').innerHTML = '<b>You are a introverted person!</b><br><br>\
 		Introverts are tricky to understand, since it’s so easy to assume that introversion is the same as being shy, when, in fact, introverts are simply people who find it tiring to be around other people.\n\
 <br><br>\

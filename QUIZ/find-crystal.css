@@ -94,6 +94,17 @@ div{
 
 }
 
+.neutral.active,
+.neutral:active,
+.neutral:focus,
+.neutral:active:focus,
+.neutral.active:focus,
+.neutral:hover {
+    /*background-color: rgba(226, 129, 129, 0.5);*/
+    background-color: #b0c2d7;
+
+}
+
 .btn-strongly-disagree {
     /*color: #394464;*/
     font-weight: bold;
@@ -107,6 +118,8 @@ div{
 .btn-strongly-disagree:hover {
     background-color: #394464;
 }
+
+
 
 .bottom {
     margin-bottom: 100px;
