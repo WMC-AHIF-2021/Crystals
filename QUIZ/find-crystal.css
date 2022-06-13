@@ -46,7 +46,7 @@ div{
 }
 .btn-group
 {
-    margin-left: 20px;
+    margin-left: 60px;
 }
 
 .btn-strongly-agree {
@@ -293,4 +293,9 @@ div{
 
 .container.text-center.bottom {
     background-color: #818BB0;
+}
+
+.list-group-item.prompt
+{
+    font-size: 1.5em;
 }
