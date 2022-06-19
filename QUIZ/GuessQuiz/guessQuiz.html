@@ -10,9 +10,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous"/>
 
     <link rel="icon" href="../../images/gems.png">
-    <title>PictureQuiz.at</title>
+    <title>GuessingQuiz.at</title>
     <link rel="icon" href="../../Crystals/images/gems.png">
-    <title>Your Personality</title>
     <link rel="stylesheet" href="guessQuiz.css">
 </head>
 <body>
@@ -21,22 +20,19 @@
     <nav class="navbar">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img class="nav-brand" style="color: #ffffff;" src="../../../Crystals/images/crystall.png" alt="crystal" width="35" height="30" style="margin-left: 10px;">
+                <img class="nav-brand" style="color: #ffffff;" src="../../images/crystall.png" alt="crystal" width="35" height="30" style="margin-left: 10px;">
             </a>
         </div>
     </nav>
     <div class="container-fluid">
-        <a class="navbar-brand" href="../../index.html" style="color: white; font-weight: bold">C&D - Crystals & Outfits</a>
+        <a class="navbar-brand" href="../../index.html" style="color: #ffffff; font-size: 1.4em">C&D - Crystals & Outfits</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ">
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" style="color: #ffffff;" href="../../../Crystals/index.html">Home   </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" style="color: #ffffff;" href="../find-crystal.html">All Quiz   </a>
+                    <a class="nav-link" aria-current="page" style="color: #ffffff;" href="../find-crystal.html">All Quizzes</a>
                 </li>
             </ul>
         </div>
@@ -44,14 +40,12 @@
     </div>
     </div>
     </div>
-
-    </div>
     </div>
 </nav>
 
 <div class="grid">
     <div id="quiz">
-        <h1>Picture Quiz</h1>
+        <h1>Guess the Pictures - Quiz</h1>
         <hr style="margin-bottom: 20px">
         <p id="question"></p>
         <div class="buttons">
@@ -59,16 +53,19 @@
             <button id="btn1"><span id="choice1"></span></button>
             <button id="btn2"><span id="choice2"></span></button>
             <button id="btn3"><span id="choice3"></span></button>
-        </div>
-        <hr style="margin-top: 50px">
-        <footer>
+
+            <hr style="margin-top: 50px">
+
             <p id="progress">Question x of y</p>
-        </footer>
+        </div>
+
+
     </div>
 </div>
 
+
 <script type="text/javascript">
-    var images = {
+    let images = {
         "AgateYellow"  : "AgateYellow.png",
         "Ametrine" : "Ametrine.png",
         "ClearQuarz" : "ClearQuarz.png",
@@ -84,13 +81,13 @@
             showScores();
         } else {
             // show the question
-            var element = document.getElementById("question");
+            let element = document.getElementById("question");
             element.innerHTML = quiz.getQuestionIndex().text;
 
             // show options
-            var choices = quiz.getQuestionIndex().choices;
-            for (var i = 0; i < choices.length; i++) {
-                var element = document.getElementById("choice" + i);
+            let choices = quiz.getQuestionIndex().choices;
+            for (let i = 0; i < choices.length; i++) {
+                let element = document.getElementById("choice" + i);
                 element.innerHTML = images[choices[i]]?
                     '<img src="'+images[choices[i]]+'"/>':choices[i];
                 guess("btn" + i, choices[i]);
@@ -101,7 +98,7 @@
     };
 
     function guess(id, guess) {
-        var button = document.getElementById(id);
+        let button = document.getElementById(id);
         button.onclick = function() {
             quiz.guess(guess);
             populate();
@@ -109,25 +106,36 @@
     };
 
     function showProgress() {
-        var currentQuestionNumber = quiz.questionIndex + 1;
-        var element = document.getElementById("progress");
+        let currentQuestionNumber = quiz.questionIndex + 1;
+        let element = document.getElementById("progress");
         element.innerHTML = "Question " + currentQuestionNumber + " of " + quiz.questions.length;
     };
 
     function showScores() {
-        var gameOverHTML = "<h1>Result</h1>";
-        gameOverHTML += "<h2 id='score'> Your right guess: " + quiz.score + "</h2>";
-        var element = document.getElementById("quiz");
-        element.innerHTML = gameOverHTML;
+        let gameOverHTML = "<h1>Result</h1>";
+        let element = document.getElementById("quiz");
+        if(quiz.score == quiz.questionIndex){
+            gameOverHTML += "<h2 id='score'>WOW!! You got all crystals right. Your score is " + quiz.score + "/" + quiz.questionIndex + "</h2>";
+            element.innerHTML = gameOverHTML;
+        }
+        else if (quiz.score > 3 && quiz.score < quiz.questionIndex){
+            gameOverHTML += "<h2 id='score'>It was okay. Your score is " + quiz.score + "/" + quiz.questionIndex + "</h2>";
+            element.innerHTML = gameOverHTML;
+        }
+        else if(quiz.score < 3)
+        {
+            gameOverHTML += "<h2 id='score'>Damn that was awful! Your score is " + quiz.score + "/" + quiz.questionIndex + "</h2>";
+            element.innerHTML = gameOverHTML;
+        }
     };
 
     // create questions
-    var questions = [
-        new Question("Which crystal is the Agate Yellow", ["Opalite", "Ametrine", "AgateYellow", "Coral"], "AgateYellow"),
-        new Question("Which crystal is the Moonstone", ["HowliteRed", "Moonstone", "Opalite", "CalciteGreen"], "Moonstone"),
-        new Question("Which crystal is the Opalite", ["Opalite", "ClearQuarz", "CalciteGreen",  "Coral"], "Opalite"),
-        new Question("Which crystal is the Bloodstone", ["Opalite", "Moonstone", "Bloodstone", "Ametrine"], "Bloodstone"),
-        new Question("Which crystal is the Coral", ["AgateYellow", "Ametrine", "Moonstone", "Coral"], "Coral")
+    let questions = [
+        new Question("Which crystal is the Agate Yellow?", ["Opalite", "Ametrine", "AgateYellow", "Coral"], "AgateYellow"),
+        new Question("Which crystal is the Moonstone?", ["HowliteRed", "Moonstone", "Opalite", "CalciteGreen"], "Moonstone"),
+        new Question("Which crystal is the Opalite?", ["Opalite", "ClearQuarz", "CalciteGreen",  "Coral"], "Opalite"),
+        new Question("Which crystal is the Bloodstone?", ["Opalite", "Moonstone", "Bloodstone", "Ametrine"], "Bloodstone"),
+        new Question("Which crystal is the Coral?", ["AgateYellow", "Ametrine", "Moonstone", "Coral"], "Coral")
     ];
 
     function Question(text, choices, answer) {
@@ -139,7 +147,6 @@
     Question.prototype.isCorrectAnswer = function(choice) {
         return this.answer === choice;
     }
-
 
     function Quiz(questions) {
         this.score = 0;
@@ -164,7 +171,7 @@
     }
 
     // create quiz
-    var quiz = new Quiz(questions);
+    let quiz = new Quiz(questions);
 
     // display quiz
     populate();

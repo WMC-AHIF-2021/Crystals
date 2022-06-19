@@ -13,7 +13,7 @@ function openForm() {
     document.getElementById("facts").innerHTML = welcomeText[0];
 }
 
-let findYourCryText = ["On this part of the website you can find out which Crystal you are or what kind of style fits you:)"]
+let findYourCryText = ["On this part of the website you can try our quizzes we made for you:) We have the Personality Quiz & the Guess the Crystal Quiz!"]
 function openForm1() {
 
     document.getElementById("myForm1").style.display = "block";
@@ -50,35 +50,11 @@ function reveal() {
         if (elementTop < windowHeight - elementVisible && element < windowHeight - elementVisible ) {
             reveals[i].classList.add("active");
             revealsForWitch[i].classList.add("active");
-
         } else {
             reveals[i].classList.remove("active");
             revealsForWitch[i].classList.remove("active");
-
         }
     }
 }
-
 reveal();
-
 window.addEventListener("scroll", reveal);
-
-expiration = new Date;
-expiration.setMonth(expiration.getMonth()+6)
-let counter = eval(cookieVal("total_visited"))
-counter++
-document.cookie = "total_visited="+counter+";expires=" + expiration.toGMTString()
-
-/*website visit count
-function cookieVal(cookieName) {
-    thisCookie = document.cookie.split("; ")
-    for (i=0; i<thisCookie.length; i++){
-        if (cookieName == thisCookie[i].split("=")[0]){
-            return thisCookie[i].split("=")[1]
-        }
-    }
-    return 0;
-}
-
-document.getElementById("website-counter").innerHTML = counter;
-*/

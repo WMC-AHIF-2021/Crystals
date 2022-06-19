@@ -49,10 +49,6 @@ div{
     margin-left: 60px;
 }
 
-.btn-strongly-agree {
-   /* color: #394464;*/
-    font-weight: bold;
-}
 
 .btn-strongly-agree.active,
 .btn-strongly-agree:active,
@@ -61,7 +57,7 @@ div{
 .btn-strongly-agree.active:focus,
 .btn-strongly-agree:hover
 {
-    background-color: #394464;
+    background-color: #6a6dbb;
 }
 
 .btn-agree {
@@ -75,7 +71,7 @@ div{
 .btn-agree.active:focus,
 .btn-agree:hover {
    /* background-color: rgba(137, 210, 152, 0.5);*/
-    background-color: #5C6689;
+    background-color: #8b97d3;
 
 }
 
@@ -90,7 +86,7 @@ div{
 .btn-disagree.active:focus,
 .btn-disagree:hover {
     /*background-color: rgba(226, 129, 129, 0.5);*/
-    background-color: #5C6689;
+    background-color: #8b97d3;
 
 }
 
@@ -101,14 +97,10 @@ div{
 .neutral.active:focus,
 .neutral:hover {
     /*background-color: rgba(226, 129, 129, 0.5);*/
-    background-color: #b0c2d7;
+    background-color: #dbdfff;
 
 }
 
-.btn-strongly-disagree {
-    /*color: #394464;*/
-    font-weight: bold;
-}
 
 .btn-strongly-disagree.active,
 .btn-strongly-disagree:active,
@@ -116,10 +108,9 @@ div{
 .btn-strongly-disagree:active:focus,
 .btn-strongly-disagree.active:focus,
 .btn-strongly-disagree:hover {
-    background-color: #394464;
+    background-color: #6a6dbb;
+
 }
-
-
 
 .bottom {
     margin-bottom: 100px;
@@ -178,12 +169,14 @@ div{
     border-bottom-width: 5px;
 }
 
-.color3{
-    border-color: #7c9fc5;
-    border-left-width: 5px;
-    border-top-width: 5px;
-    border-right-width: 5px;
-    border-bottom-width: 5px;
+.witch{
+    width: 85%;
+    height: 70%;
+}
+
+.witch:hover{
+    width: 90%;
+    height: 75%;
 }
 
 /*DROPDOWN*/
@@ -216,7 +209,6 @@ div{
     color: #A8B1D8;
     padding: 3px 5px;
     text-decoration: none;
-    font-weight: bold;
     display: block;
 }
 
@@ -287,13 +279,6 @@ div{
     height: 100%;
 
 }
-
-/*.h2
-{
-    line-height: 1.2;
-    align-content: center;
-    margin-left: 50px;
-}*/
 
 .list-group
 {

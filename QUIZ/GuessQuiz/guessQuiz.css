@@ -39,8 +39,9 @@ hr
     border: none;
 }
 #score {
-    color: #b0c2d7;
+    color: #ffffff;
     text-align: center;
+    padding-top: 5em;
     font-size: 30px;
 }
 

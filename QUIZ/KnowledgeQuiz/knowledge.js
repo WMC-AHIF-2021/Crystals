@@ -92,7 +92,6 @@ function renderCounter(){
     }
 }
 
-
 function checkAnswer(answer){
     if( answer == questions[runningQuestion].correct){
         // answer is correct
